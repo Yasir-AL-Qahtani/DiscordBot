@@ -202,6 +202,6 @@ async  def on_typing(channel, user, when):
 
 
 
-client.run('OTMwNTEwNTY0Njg4NTU2MDYz.Yd27fg.82etIu7Vo3iAwyi9n3NDsp_7TF0')
+client.run('###################################')
 
 
