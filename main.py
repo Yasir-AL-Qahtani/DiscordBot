@@ -110,19 +110,19 @@ async def place(ctx,pos:int ):
 
 
             else:
-                await ctx.send("اختار رقم من 1 الى 9 يا هطف و اختار مكان فاضي ")
+                await ctx.send("اختار رقم من 1 الى 9 , اختار مكان فاضي ")
 
             pass
         else:
-            await ctx.send("موب دروك يا غبي")
+            await ctx.send("موب دروك ")
     else:
-        await ctx.send("مافي احد يلعب يا هطف ")
+        await ctx.send("مافي احد يلعب  ")
 
 
 @tictactoe.error
 async def tictactoe_error(ctx,error):
     if isinstance(error,commands.MissingRequiredArgument):
-        await  ctx.send("نفسيه معقد انت؟ منشن واحد عشان تلعب معه")
+        await  ctx.send(" منشن واحد عشان تلعب معه")
     elif isinstance(error, commands.BadArgument):
         await ctx.send("Please make sure to mention/ping players (ie. <@930510564688556063>).")
 
@@ -132,7 +132,7 @@ async def place_error(ctx, error):
     if isinstance(error, commands.MissingRequiredArgument):
         await ctx.send("دخل رقم ياذكي  ")
     elif isinstance(error, commands.BadArgument):
-        await ctx.send("غبي انت ؟ دخل رقم ")
+        await ctx.send(" دخل رقم ")
 
 def cheackWinner(winningConditions,mark):
     global gameOver
@@ -191,12 +191,12 @@ async def on_message(message):
     await client.process_commands(message) #OverRiding
 
 @client.event
-async  def on_typing(channel, user, when):
-    if user.name=='ASEER5005':
-        await channel.send("هلا بطويل العمر ياسر"
+async  def on_typing(channel, user, when):#when the username you put in fun the bot send a message.
+    if user.name=='username':
+        await channel.send("put your message here"
                            "")
-    if user.name=='codzilla2015😊✌🥚':
-        await  channel.send(' انميك خايس  ون بيس احسن  ')
+    if user.name=='Username':
+        await  channel.send('put your message here')
 
 
 
